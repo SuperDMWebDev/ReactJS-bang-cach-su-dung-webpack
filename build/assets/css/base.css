@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black-two: #111111;
+    --pinkish-grey-two: #ccc8c6;
+    --bright-orange: #f96400;
+    --dark-brown: #110e03;
+    --dark-maroon: #020001;
+    --black-Three: #222222;
+    --cerulean: #0565bb;
+    --sun-yellow: #fcd32a;
+    --black-three: #222222;
+    --goldenrod: #fccb05;
+    --bright-orange-two: #ff5500;
+    --white-three: #f4f4f4;
+    --greyish: #a9a9a9;
+}
+
+.grid__column-2-4 {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.clear {
+    clear: both;
+}
