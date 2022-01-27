@@ -1,5 +1,7 @@
 const path = require("path");
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.js", // Dẫn tới file index.js ta đã tạo
@@ -16,6 +18,15 @@ module.exports = {
             {
                 test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
                 use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.(jpe?g|gif|png|svg)$/i,
+                use: [{
+                    loader: 'url-loader',
+                    options: {
+                        limit: 10000
+                    }
+                }]
             }
         ]
     },
@@ -23,6 +34,15 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./public/index.html"
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, 'src', 'assets'), to: path.resolve(__dirname, 'build', 'assets') },
+            ],
         })
-    ]
+    ],
+
+
+
+
 };
