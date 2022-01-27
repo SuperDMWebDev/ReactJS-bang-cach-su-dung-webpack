@@ -220,7 +220,7 @@ img.Bes_bg {
 
 .How-to-create-mobile-optimized-videos-in-minutes-Not-a-designe-1 {
     position: absolute;
-    top: 21%;
+    top: 22%;
     left: 32.5%;
     width: 668px;
     height: 52px;
@@ -238,7 +238,7 @@ img.Bes_bg {
 
 .image__product {
     position: absolute;
-    top: 33.7%;
+    top: 32.9%;
     left: 9.1%;
     right: 9.1%;
     display: flex;
@@ -555,8 +555,8 @@ img.Object_06 {
 
 img.Object_01 {
     position: absolute;
-    top: 183px;
-    left: 169px;
+    top: 19.1%;
+    left: 8.8%;
     width: 183px;
     height: 208px;
     object-fit: contain;
@@ -615,8 +615,8 @@ img.Object_05 {
 
 .brand-poster {
     position: absolute;
-    top: 345px;
-    left: 333px;
+    top: 36.1%;
+    left: 17.3%;
 }
 
 .Rectangle-668 {
@@ -1120,7 +1120,7 @@ img.VideoObject_02 {
 }
 
 .footer-box {
-    width: 1920px;
+    width: 100%;
     height: 464px;
     background-color: #fff;
     position: relative;
